@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :items, :transaction
+  attr_accessor :total, :discount, :items
   
   def initialize(discount = nil)
     @total = 0
@@ -30,7 +30,7 @@ class CashRegister
   # end
   
   def void_last_transaction
-    self.items.pop
+    self.items
   end
   
 end

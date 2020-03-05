@@ -30,9 +30,7 @@ class CashRegister
   # end
   
   def void_last_transaction
-    quantity = self.total
     self.items.pop
-    return self.total
   end
   
 end
